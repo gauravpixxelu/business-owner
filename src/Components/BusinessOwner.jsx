@@ -1,5 +1,29 @@
 import React from 'react';
+import Popup from './Popup';
+import { useEffect } from 'react';
+import { NavLink } from "react-router-dom";
+import Banner_Img_Bg from '../assets/images/banner-img-bg.png';
+import About_Sec from '../assets/images/about-sec.png';
+import Stars from '../assets/icons/stars.png';
+import Check from '../assets/icons/check.svg';
+import Image1 from '../assets/images/image1.png';
+import Circle_Shape from '../assets/images/circle-shape.png';
+import Right_Arrow from '../assets/images/right-arrow.png';
+import Left_Arrow from '../assets/images/left-arrow.png';
+import Image2 from '../assets/images/image2.png';
+import Image3 from '../assets/images/image3.png';
+import Carousel_Logo1 from '../assets/images/logo-1.jpg';
+import Carousel_Logo2 from '../assets/images/logo-2.jpg';
+import Carousel_Logo3 from '../assets/images/logo-3.jpg';
+import Carousel_Logo4 from '../assets/images/logo-4.jpg';
+import Carousel_Logo5 from '../assets/images/logo-5.jpg';
+import Carousel_Logo6 from '../assets/images/logo-6.jpg';
+import Carousel_Logo7 from '../assets/images/logo-7.jpg';
+import Carousel_Logo8 from '../assets/images/logo-8.jpg';
 import Carousel from 'react-multi-carousel';
+import ContactForm from './ContactForm';
+
+
 import 'react-multi-carousel/lib/styles.css';
 const responsive = {
     superLargeDesktop: {
@@ -12,11 +36,11 @@ const responsive = {
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 2
+        items: 3
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 1
+        items: 2
     }
 };
 
@@ -32,7 +56,7 @@ const testimonial = {
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 2
+        items: 1
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
@@ -42,7 +66,12 @@ const testimonial = {
 
 
 function BusinessOwner() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
+
+        
         <div className="business-owner-page">
 
             {/* Banner Section Starts */}
@@ -50,7 +79,8 @@ function BusinessOwner() {
             <section className="banner">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        
+                        <div className="col-md-6" data-aos="fade-right">
                             <div className="banner-content">
                                 <h1>Business Growth Blueprint</h1>
                                 <p>Diagnose, Forecast and structure how to take your business to the next level.</p>
@@ -58,10 +88,10 @@ function BusinessOwner() {
                                 <h5>Only 15€ for the full report.</h5>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-left">
                             <div className="banner-image">
-                                <img className="abxo" src="images/banner-img.png" alt="" />
-                                <img className="gdxo" src="images/banner-img-bg.png" alt="" />
+                                <Popup />
+                                <img className="gdxo" src={Banner_Img_Bg} alt="Banner_Img_Bg" />
                             </div>
                         </div>
                     </div>
@@ -75,9 +105,9 @@ function BusinessOwner() {
             <section className="curve">
                 <div className="container">
                     <div className="curve-content"></div>
-                    <div className="curve-text">
+                    <div className="curve-text" data-aos="fade-up">
                         <p>Schedule a meeting and see how RED3SIXTY will help you through a guided tour.</p>
-                        <a href="#" className="custom-btn"><span>Book Now</span></a>
+                        <NavLink to="https://youtu.be/qKywLbJRfx8" className="custom-btn" target="_blank"><span>Watch Demo</span></NavLink>
                     </div>
                 </div>
             </section>
@@ -90,16 +120,16 @@ function BusinessOwner() {
             <section className="about-block">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-right">
                             <div className="about-block-content">
                                 <h4 className="small-hdn">ABOUT RED3SIXTY</h4>
                                 <h2 className="hdng">Whether you manage or own a small or large business the platform will accurately predict your ability to succeed</h2>
                                 <p className="hdng-16">The Business Builder framework is designed to accurately determine at what stage your business is at present while at the same time highlighting critical areas to focus on to ensure your business grows and succeeds in the long term.</p>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-left">
                             <div className="about-block-image">
-                                <img src="images/about-sec.png" alt="" />
+                                <img src={About_Sec} alt="About_Sec" />
                             </div>
                         </div>
                     </div>
@@ -112,9 +142,9 @@ function BusinessOwner() {
             {/* Logo Slder Section Ends */}
 
             <section className="logo-carousel">
-                <div className="container">
-                <h2 class="sec-hdng">Excellent <img src="icons/stars.png" alt="" /> 4.12 Based On 1258 Reviews</h2>
-                    <Carousel responsive={testimonial} infinite={true}>
+                <div className="container" >
+                <h2 className="sec-hdng" data-aos="fade-up">Excellent <img src={Stars} alt="Stars" /> 4.12 Based On 1258 Reviews</h2>
+                    <Carousel responsive={testimonial} infinite={true} data-aos="fade-up">
                         <div className="testimonial-txt">
                         <h5 className="hdng-h5">Kethani</h5>
                         <p className="hdng-16">Verified Customer</p>
@@ -149,24 +179,22 @@ function BusinessOwner() {
             <section className="home-points">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-right">
                             <div className="points-video">
-                                <video autoplay="autoplay" class="myVideo" muted="muted">
-                                    <source src="https://youtu.be/WOuoVRFaB4g" type="video/mp4" />
-                                </video>
+                                <iframe width="100%" height="350" autoplay="autoplay" muted="muted" src="https://www.youtube.com/embed/WOuoVRFaB4g" title="YouTube video player" frameborder="0" ></iframe>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-left">
                             <div className="points-content ">
                                 <ul className="site-ul">
-                                    <li><img src="icons/check.svg" alt="" />Gain Insights into 10 building blocks aimed at growing your business</li>
-                                    <li><img src="icons/check.svg" alt="" />Improve product and service profitability</li>
-                                    <li><img src="icons/check.svg" alt="" />Increase your market share and improve customer targeting</li>
-                                    <li><img src="icons/check.svg" alt="" />Increase referrals, more up and cross-sell opportunities</li>
-                                    <li><img src="icons/check.svg" alt="" />Increase marketing and sales leads</li>
-                                    <li><img src="icons/check.svg" alt="" />Sales performance improvement resulting in increased conversion</li>
-                                    <li><img src="icons/check.svg" alt="" />Increase employee engagement and better succession planning</li>
-                                    <li><img src="icons/check.svg" alt="" />Compliance with best practice governance framework</li>
+                                    <li><img src={Check} alt="Check" />Gain Insights into 10 building blocks aimed at growing your business</li>
+                                    <li><img src={Check} alt="Check" />Improve product and service profitability</li>
+                                    <li><img src={Check} alt="Check" />Increase your market share and improve customer targeting</li>
+                                    <li><img src={Check} alt="Check" />Increase referrals, more up and cross-sell opportunities</li>
+                                    <li><img src={Check} alt="Check" />Increase marketing and sales leads</li>
+                                    <li><img src={Check} alt="Check" />Sales performance improvement resulting in increased conversion</li>
+                                    <li><img src={Check} alt="Check" />Increase employee engagement and better succession planning</li>
+                                    <li><img src={Check} alt="Check" />Compliance with best practice governance framework</li>
                                 </ul>
                             </div>
                         </div>
@@ -182,54 +210,58 @@ function BusinessOwner() {
             <section className="platform-block">
                 <div className="container">
                     <div className="row platform-1">
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-left">
                             <div className="platform-txt">
-                                <h4 className="small-hdn">ENTERPRISE GROWTH PLATFORM</h4>
-                                <h2 className="hdng">Platform Demo</h2>
-                                <p className="hdng-16">In this call, we will show you how easy it is to use the platform to scale and grow your consulting or coaching business. The platform is designed to help you generate revenue from day one! No need to commit and no sales pitch!</p>
-                                <a href="#" class="custom-btn"><span>Book Now</span></a>
+                                <h2 className="hdng">You get a 10 Page Business Diagnostic Report showing you where you need to focus</h2>
+                                <p className="hdng-16">The Business Builder uses an algorithm developed by incorporating the lessons and insights gained from working with 1000s of business owners over the last 15 years.</p>
+                                <p className="hdng-16">By applying the results you will be able to drastically increase your chance of building a sustainable business in the shortest time.</p>
+                                <NavLink to="https://youtu.be/qKywLbJRfx8" className="custom-btn" target="_blank"><span>Watch Demo</span></NavLink>
+                                <a href="/pdf/business-builder.pdf" className="custom-btn-2" download><span>Download Example</span></a>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-right">
                             <div className="banner-image">
-                                <img className="abxo" src="images/platform-img1.png" alt="" />
-                                <img className="gdxo" src="images/circle-shape.png" alt="" />
+                                <img className="abxo" src={Image1} alt="Image1" />
+                                <img className="gdxo" src={Circle_Shape} alt="Circle_Shape" />
                             </div>
                         </div>
-                        <img className="vector gd" src="images/right-arrow.png" alt="" />
+                        <img className="vector gd" src={Right_Arrow} alt="Right_Arrow" />
                     </div>
 
                     <div className="row platform-2">
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-right">
                             <div className="banner-image">
-                                <img className="abxo" src="images/platform-img2.png" alt="" />
-                                <img className="gdxo" src="images/circle-shape.png" alt="" />
+                                <img className="abxo" src={Image2} alt="Image2" />
+                                <img className="gdxo" src={Circle_Shape} alt="Circle_Shape" />
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-left">
                             <div className="platform-txt">
-                                <h4 className="small-hdn">ENTERPRISE GROWTH PLATFORM</h4>
-                                <h2 className="hdng">Earning Potential</h2>
-                                <p className="hdng-16">In this call, we will take you through the process of calculating what revenue you can earn from day one. We will show you the products and services you get access to help your customers grow their businesses. Book now and start earning consulting or coaching revenue the next day!</p>
-                                <a href="#" class="custom-btn"><span>Book Now</span></a>
+                                <h2 className="hdng">We apply a structured engagement model including both online consultation and online diagnostic gap analysis. We focus on:</h2>
+                                <p className="hdng-16">1. Increased revenue generation capability & improved profit margins</p>
+                                <p className="hdng-16">2. On critical business growth areas while at the same time areas that needs attention</p>
+                                <p className="hdng-16">3. Ensure governance compliance and return on investment for shareholders</p>
+                                <NavLink to="https://youtu.be/qKywLbJRfx8" className="custom-btn" target="_blank"><span>Watch Demo</span></NavLink>
+                                <NavLink to="https://youtu.be/WOuoVRFaB4g" className="custom-btn-2" target="_blank"><span>Watch Video</span></NavLink>
                             </div>
                         </div>
-                        <img className="vector dg" src="images/left-arrow.png" alt="" />
+                        <img className="vector dg" src={Left_Arrow} alt="Left_Arrow" />
                     </div>
 
                     <div className="row platform-3">
                         <div className="col-md-6">
-                            <div className="platform-txt">
-                                <h4 className="small-hdn">ENTERPRISE GROWTH PLATFORM</h4>
-                                <h2 className="hdng">Opportunity Review</h2>
-                                <p className="hdng-16">In this call, we take you through the entire process step by step. From registering on the platform, training, and delivering your first consulting or coaching engagement. We will show you the cost of the platform, what you can earn and how to deliver.</p>
-                                <a href="#" class="custom-btn"><span>Book Now</span></a>
+                            <div className="platform-txt" data-aos="fade-left">
+                                <h2 className="hdng">Business Valuation</h2>
+                                <p className="hdng-16">We will provide you with a detailed valuation and strategic analysis to assist you and your customer with building a successful and scalable business.</p>
+                                <p className="hdng-16">Based on their Analysis Score we are able to calculate the value of their business today and then estimate the value that you can add by working together on the development.</p>
+                                <NavLink to="https://youtu.be/qKywLbJRfx8" className="custom-btn" target="_blank"><span>Watch Demo</span></NavLink>
+                                <NavLink to="https://youtu.be/WOuoVRFaB4g" className="custom-btn-2" target="_blank"><span>Watch Video</span></NavLink>
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div className="banner-image">
-                                <img className="abxo" src="images/platform-img3.png" alt="" />
-                                <img className="gdxo" src="images/circle-shape.png" alt="" />
+                            <div className="banner-image" data-aos="fade-right">
+                                <img className="abxo" src={Image3} alt="Image3" />
+                                <img className="gdxo" src={Circle_Shape} alt="Circle_Shape" />
                             </div>
                         </div>
                     </div>
@@ -242,13 +274,16 @@ function BusinessOwner() {
 
             <section className="logo-carousel">
                 <div className="container">
-                    <Carousel responsive={responsive} infinite={true}>
-                        <img src="images/logo-1.jpg" alt="" />
-                        <img src="images/logo-2.jpg" alt="" />
-                        <img src="images/logo-3.jpg" alt="" />
-                        <img src="images/logo-4.jpg" alt="" />
-                        <img src="images/logo-5.jpg" alt="" />
-                        <img src="images/logo-6.jpg" alt="" />
+                <h2 className="sec-hdng" data-aos="fade-up">Customers Worked With</h2>
+                    <Carousel responsive={responsive} infinite={true} data-aos="fade-up">
+                        <img src={Carousel_Logo1} alt="Carousel_Logo1" />
+                        <img src={Carousel_Logo2} alt="Carousel_Logo2" />
+                        <img src={Carousel_Logo3} alt="Carousel_Logo3" />
+                        <img src={Carousel_Logo4} alt="Carousel_Logo4" />
+                        <img src={Carousel_Logo5} alt="Carousel_Logo5" />
+                        <img src={Carousel_Logo6} alt="Carousel_Logo6" />
+                        <img src={Carousel_Logo7} alt="Carousel_Logo7" />
+                        <img src={Carousel_Logo8} alt="Carousel_Logo8" />
                     </Carousel>
                 </div>
             </section>
@@ -258,11 +293,12 @@ function BusinessOwner() {
 
             <section className="book-block">
                 <div className="container">
-                    <div className="consulting-hdngs">
+                    <div className="consulting-hdngs" data-aos="fade-up">
                         <h2 className="sec-hdng">Book your consultation today.</h2>
                         <p className="hdng-16">One of our trusted advisors will contact you to assist you with completing the diagnostic and reviewing the results at no cost</p>
                     </div>
-                    <p className="hdng-16 text-center"><b>Our promise: </b>We will NEVER share your personal information and will under no circumstances try and sell you services you do not require or want</p>
+                    <ContactForm />
+                    <p className="hdng-16 text-center" data-aos="fade-up"><b>Our promise: </b>We will NEVER share your personal information and will under no circumstances try and sell you services you do not require or want</p>
                 </div>
             </section>
 

@@ -1,0 +1,323 @@
+@media screen and (max-width:767px) {
+
+/*-- Website Css --*/
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+h4.small-hdn {
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+h2.sec-hdng {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+h2.hdng {
+    font-size: 24px;
+}
+h5.hdng-h5 {
+    font-size: 18px;
+}
+p.hdng-16 {
+    font-size: 14px;
+}
+p.hdng-18 {
+    font-size: 16px;
+}
+.custom-btn, .custom-btn-2 {
+    font-size: 14px;
+    padding: 10px 25px;
+}
+.site-ul li {
+    font-size: 14px;
+    gap: 10px;
+}
+.site-ul li img {
+    width: 18px;
+}
+.accordion-item .accordion-button {
+    font-size: 16px;
+}
+.accordion-body tr th {
+    font-size: 14px;
+    padding: 5px 15px;
+}
+.accordion-body tr td {
+    font-size: 12px;
+    padding: 5px 15px;
+}
+.accordion-body p {
+    font-size: 14px;
+}
+.logo-carousel {
+    padding: 60px 0 30px;
+}
+
+/*-- Website Css --*/
+
+
+/*-- Header Css --*/
+
+.site-header {
+    padding: 10px 0;
+}
+.business-header nav.navbar {
+    justify-content: center;
+}
+.business-header nav.navbar ul.navbar-nav {
+    gap: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    flex-direction: row;
+}
+.banner-content h3 {
+    font-size: 24px;
+}
+.banner-content h5 {
+    font-size: 18px;
+}
+
+/*-- Header Css --*/
+
+
+/*-- Homepage Css --*/
+
+.banner-content h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+.banner-content h4 {
+    font-size: 12px;
+}
+.banner-content p {
+    font-size: 16px;
+}
+.banner-content a.custom-btn {
+    margin-top: 20px;
+}
+.banner-content {
+    margin-top: 40px;
+}
+.banner {
+    padding: 40px 0 100px;
+}
+.banner .row {
+    flex-wrap: wrap-reverse;
+}
+.curve-content:after {
+    width: 100%;
+    height: 50px;
+    top: -49px;
+}
+.curve-text p {
+    font-size: 14px;
+}
+.curve-text {
+    max-width: 200px;
+    left: 80px;
+    top: -15px;
+}
+.about-block {
+    padding: 30px 0;
+}
+.about-block .about-block-image {
+    margin-top: 20px;
+}
+.home-points {
+    padding: 30px 0;
+}
+.points-video video.myVideo {
+    width: 100%;
+}
+.home-points .points-content {
+    padding-left: 0;
+    padding-top: 15px;
+}
+.consulting-block .site-ul li span.image-circle {
+    height: 40px;
+    max-width: 40px;
+    padding: 7px;
+}
+.consulting-block {
+    padding: 30px 0;
+}
+.book-block {
+    padding: 30px 0;
+}
+.diagno-block {
+    padding: 30px 0;
+}
+.diagno-block .row {
+    flex-wrap: wrap-reverse;
+}
+.diagno-block-content {
+    margin-top: 30px;
+}
+.platform-block .row:nth-child(odd) {
+    flex-wrap: wrap-reverse;
+}
+.vector {
+    display: none;
+}
+.platform-txt {
+    max-width: 100%;
+    margin-top: 15px;
+}
+.consulting-block .site-ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.banner-image {
+    margin: 20px 0;
+}
+.platform-block .row {
+    padding: 0;
+}
+.platform-block .banner-image img.abxo {
+    height: auto;
+    width: 100%;
+}
+.logo-carousel h2.sec-hdng {
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.logo-carousel h2.sec-hdng img {
+    width: 70px;
+}
+.testimonial-txt {
+    min-height: auto;
+}
+
+/*-- Homepage Css --*/
+
+
+
+
+
+/*-- Footer Css --*/
+
+.business-footer .footer-address ul {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+a.footer-logo {
+    width: 250px;
+    display: block;
+    margin-bottom: 20px;
+}
+.site-footer ul li a {
+    font-size: 14px;
+}
+.site-footer ul li {
+    font-size: 14px;
+}
+.business-footer .footer-address ul li img {
+    width: 24px;
+}
+.business-footer .footer-social ul li img {
+    width: 24px;
+}
+.business-footer .footer-social ul {
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+.site-footer .bottom-bar p {
+    font-size: 12px;
+}
+.business-footer {
+    padding: 20px 0;
+}
+
+
+/*-- Footer Css --*/
+
+
+/*-- Contact Form Css --*/
+
+.form-block {
+    flex-wrap: wrap;
+}
+.form-block .form-feild input, .form-block .form-feild select {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+}
+.custom-btn.black {
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+}
+
+
+/*-- Contact Form Css --*/
+
+
+
+
+
+/*-- Blog Css --*/
+
+.blog-block {
+    padding: 10px 0;
+}
+.blog-box h2 {
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.blog-box {
+    margin-bottom: 10px;
+}
+
+/*-- Blog Css --*/
+
+
+
+
+
+
+/*-- Implementation Css --*/
+
+.id-block .text-block-impli {
+    box-shadow: 0px 12px 24px 0px rgb(0 0 0 / 5%);
+    margin-bottom: 10px;
+}
+.id-block .text-block-impli .text-block-middle {
+    padding: 30px 10px;
+}
+.id-block .text-block-impli .text-block-middle .text-block-middle-links ul li a {
+    font-size: 16px;
+}
+.id-block .text-block-impli .text-block-middle .text-block-middle-links ul {
+    margin: 20px 0 0;
+    gap: 10px;
+}
+.id-block .text-block-impli .text-block-middle .text-block-middle-links img {
+    height: 45px;
+}
+.id-block .text-block-impli .text-block-middle .text-block-middle-links ul li img {
+    width: 24px;
+}
+.id-block .text-block-impli .text-block-top {
+    padding: 10px;
+}
+.id-block {
+    padding: 20px 0;
+}
+.implementation-partners-page .banner {
+    padding: 0 0 30px;
+}
+/*-- Implementation Css --*/
+
+
+
+}
