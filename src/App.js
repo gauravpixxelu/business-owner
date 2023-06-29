@@ -8,6 +8,9 @@ import BusinessOwner from './Components/BusinessOwner';
 import ImplementationPartners from './Components/ImplementationPartners';
 import Blogs from './Components/Blogs';
 import BlogDetail from './Components/BlogDetail';
+import NotFound from './Components/NotFound';
+
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init({
@@ -43,6 +46,8 @@ function App() {
           <Route path="/implementation-partners" element={<ImplementationPartners />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:slug" element={<BlogDetail />} /> 
+          <Route path="/*" element={<NotFound />} /> 
+          
         </Routes>
         <Footer />
       </Router>

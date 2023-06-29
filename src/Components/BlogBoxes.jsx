@@ -6,7 +6,7 @@ const BlogBoxes = () => {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const response = await fetch('https://red3sixtyonlinechatgpt.mbeadmin.com/api/all-blogs-list-business-owner');
+      const response = await fetch(`${process.env.REACT_APP_API_URL}all-blogs-list-business-owner`);
       const data = await response.json();
       setBlogs(data.data);
     };
