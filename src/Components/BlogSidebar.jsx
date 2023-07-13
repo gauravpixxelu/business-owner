@@ -11,7 +11,7 @@ const BlogSidebar = () => {
   useEffect(() => {
     const fetchPopularPosts = async () => {
       const response = await fetch(
-        "https://pixxelu.com/dev/red3sixty/api/all-blogs-list-business-owner"
+        `${process.env.REACT_APP_API_URL}all-blogs-list-business-owner`
       );
       const data = await response.json();
       setBlogs(data.data);
