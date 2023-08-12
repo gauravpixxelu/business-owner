@@ -308,13 +308,19 @@ a.footer-logo {
     width: 24px;
 }
 .id-block .text-block-impli .text-block-top {
-    padding: 10px;
+    padding: 15px;
+}
+.id-block .text-block-impli .text-block-middle-links .person-about h5 {
+    font-size: 20px;
 }
 .id-block {
     padding: 20px 0;
 }
 .implementation-partners-page .banner {
     padding: 0 0 30px;
+}
+.id-block .text-block-impli .text-block-middle-links .person-about p a {
+    font-size: 14px;
 }
 /*-- Implementation Css --*/
 
