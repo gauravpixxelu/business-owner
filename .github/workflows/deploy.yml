@@ -16,7 +16,6 @@ jobs:
       - uses: actions/checkout@v1
       - run : npm install
       - run : npm run build
-      - run : sudo rm -r /var/www/html/business-owner/build
-      - run : sudo mv /home/aakash/actions-runner-business/_work/business-owner/business-owner/build /var/www/html/business-owner/
-      - run : sudo cp /var/www/.htaccess /var/www/html/business-owner/build
-
+      - run : sudo rm -r /var/www/business/build
+      - run : sudo mv /home/mbe/actions-runner-two/_work/business-owner/business-owner/build /var/www/business/
+      - run : sudo cp /var/www/.htaccess /var/www/business/build
