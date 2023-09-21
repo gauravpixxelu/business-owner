@@ -216,7 +216,7 @@ function BusinessOwner() {
                                 <h2 className="hdng">You get a 10 Page Business Diagnostic Report showing you where you need to focus</h2>
                                 <p className="hdng-16">The Business Builder uses an algorithm developed by incorporating the lessons and insights gained from working with 1000s of business owners over the last 15 years.</p>
                                 <p className="hdng-16">By applying the results you will be able to drastically increase your chance of building a sustainable business in the shortest time.</p>
-                                <NavLink to="https://youtu.be/qKywLbJRfx8" className="custom-btn" target="_blank"><span>Watch Demo</span></NavLink>
+                                <NavLink to="https://youtu.be/1mPoWDv21Fc" className="custom-btn" target="_blank"><span>Watch Demo</span></NavLink>
                                 <a href={Business_Builder_Main} className="custom-btn-2" download><span>Download Example</span></a>
                             </div>
                         </div>
