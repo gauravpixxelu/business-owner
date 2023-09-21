@@ -20,6 +20,7 @@ import Carousel_Logo5 from '../assets/images/logo-5.jpg';
 import Carousel_Logo6 from '../assets/images/logo-6.jpg';
 import Carousel_Logo7 from '../assets/images/logo-7.jpg';
 import Carousel_Logo8 from '../assets/images/logo-8.jpg';
+import Business_Builder_Main from '../assets/pdf/business-builder-main.pdf';
 import Carousel from 'react-multi-carousel';
 import ContactForm from './ContactForm';
 
@@ -107,7 +108,7 @@ function BusinessOwner() {
                     <div className="curve-content"></div>
                     <div className="curve-text" data-aos="fade-up">
                         <p>Schedule a meeting and see how RED3SIXTY will help you through a guided tour.</p>
-                        <NavLink to="https://youtu.be/qKywLbJRfx8" className="custom-btn" target="_blank"><span>Watch Demo</span></NavLink>
+                        <NavLink to="https://www.youtube.com/watch?v=BtvFBoN3jyA" className="custom-btn" target="_blank"><span>Watch Demo</span></NavLink>
                     </div>
                 </div>
             </section>
@@ -216,12 +217,12 @@ function BusinessOwner() {
                                 <p className="hdng-16">The Business Builder uses an algorithm developed by incorporating the lessons and insights gained from working with 1000s of business owners over the last 15 years.</p>
                                 <p className="hdng-16">By applying the results you will be able to drastically increase your chance of building a sustainable business in the shortest time.</p>
                                 <NavLink to="https://youtu.be/qKywLbJRfx8" className="custom-btn" target="_blank"><span>Watch Demo</span></NavLink>
-                                <a href="/pdf/business-builder.pdf" className="custom-btn-2" download><span>Download Example</span></a>
+                                <a href={Business_Builder_Main} className="custom-btn-2" download><span>Download Example</span></a>
                             </div>
                         </div>
                         <div className="col-md-6" data-aos="fade-right">
                             <div className="banner-image">
-                                <img className="abxo" src={Image1} alt="Image1" />
+                                <img className="abxo" src={Image3} alt="Image1" />
                                 <img className="gdxo" src={Circle_Shape} alt="Circle_Shape" />
                             </div>
                         </div>
@@ -260,7 +261,7 @@ function BusinessOwner() {
                         </div>
                         <div className="col-md-6">
                             <div className="banner-image" data-aos="fade-right">
-                                <img className="abxo" src={Image3} alt="Image3" />
+                                <img className="abxo" src={Image1} alt="Image3" />
                                 <img className="gdxo" src={Circle_Shape} alt="Circle_Shape" />
                             </div>
                         </div>
