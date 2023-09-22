@@ -242,8 +242,8 @@ function BusinessOwner() {
                                 <p className="hdng-16">1. Increased revenue generation capability & improved profit margins</p>
                                 <p className="hdng-16">2. On critical business growth areas while at the same time areas that needs attention</p>
                                 <p className="hdng-16">3. Ensure governance compliance and return on investment for shareholders</p>
-                                <NavLink to="https://youtu.be/qKywLbJRfx8" className="custom-btn" target="_blank"><span>Watch Demo</span></NavLink>
-                                <NavLink to="https://youtu.be/WOuoVRFaB4g" className="custom-btn-2" target="_blank"><span>Watch Video</span></NavLink>
+                                <NavLink to="https://red-project.com/pages/view-form/Zm9ybV9pZD01" className="custom-btn" target="_blank"><span>Take Survey</span></NavLink>
+                                <NavLink to="https://youtu.be/Jbfu6G7WUkY" className="custom-btn-2" target="_blank"><span>Watch Video</span></NavLink>
                             </div>
                         </div>
                         <img className="vector dg" src={Left_Arrow} alt="Left_Arrow" />
@@ -255,8 +255,8 @@ function BusinessOwner() {
                                 <h2 className="hdng">Business Valuation</h2>
                                 <p className="hdng-16">We will provide you with a detailed valuation and strategic analysis to assist you and your customer with building a successful and scalable business.</p>
                                 <p className="hdng-16">Based on their Analysis Score we are able to calculate the value of their business today and then estimate the value that you can add by working together on the development.</p>
-                                <NavLink to="https://youtu.be/qKywLbJRfx8" className="custom-btn" target="_blank"><span>Watch Demo</span></NavLink>
-                                <NavLink to="https://youtu.be/WOuoVRFaB4g" className="custom-btn-2" target="_blank"><span>Watch Video</span></NavLink>
+                                <NavLink to="https://red-project.com/pages/view-form/Zm9ybV9pZD01" className="custom-btn" target="_blank"><span>Take Survey</span></NavLink>
+                                <NavLink to="https://youtu.be/AEr_6Ak4asQ" className="custom-btn-2" target="_blank"><span>Watch Video</span></NavLink>
                             </div>
                         </div>
                         <div className="col-md-6">
