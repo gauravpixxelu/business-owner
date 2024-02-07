@@ -6,11 +6,13 @@ import Web_Logo1 from '../assets/images/logo-1.png';
 import Web_Logo3 from '../assets/images/logo-3.png';
 import Web_Logo4 from '../assets/images/logo-4.png';
 import Web_Logo5 from '../assets/images/logo-5.png';
+import Web_Logo6 from '../assets/images/logo-6.png';
 import Person2 from '../assets/images/person-2.jpg';
 import Person1 from '../assets/images/person-1.jpg';
 import Person3 from '../assets/images/person-3.jpg';
 import Person4 from '../assets/images/person-4.jpg';
 import Person5 from '../assets/images/person-5.jpg';
+import Person6 from '../assets/images/person-6.png';
 import { NavLink } from "react-router-dom";
 
 function ImplementationPartners() {
@@ -191,6 +193,36 @@ function ImplementationPartners() {
                                 </div>
                                 <div className="text-block-bottom">
                                     <p className="hdng-18">Kimberley, South Africa</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-md-4" data-aos="fade-up">
+                            <div className="text-block-impli">
+                                <div className="text-block-top">
+                                    <h5 className="hdng-h5"> Procursus Consulting Services (Pty) Ltd</h5>
+                                </div>
+                                <div className="text-block-middle">
+                                    <div className="text-block-middle-image">
+                                        <img src={Person6} alt="Person6" />
+                                        <div className="logo-op">
+                                            <img src={Web_Logo6} alt="Web_Logo6" />
+                                        </div>
+                                    </div>
+                                    <div className="text-block-middle-links">
+                                        <div className="person-about">
+                                            <h5>Grant Lintnaar</h5>
+                                            <p><NavLink to="mailto:info@procursus.co.za">info@procursus.co.za</NavLink></p>
+                                            <p><NavLink to="tel:+27829798507">+27 82 979 8507</NavLink></p>
+                                        </div>
+                                        <ul>
+                                            <li><NavLink to="https://www.linkedin.com/company/procursus-consulting-services/?viewAsMember=true" target="_blank" rel="noreferrer"><img src={Linkedin} alt="Linkedin" /></NavLink></li>
+                                            <li><NavLink to="https://www.procursus.co.za" target="_blank" rel="noreferrer">www.procursus.co.za</NavLink></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="text-block-bottom">
+                                    <p className="hdng-18">Cape Town</p>
                                 </div>
                             </div>
                         </div>
