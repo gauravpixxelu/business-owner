@@ -17,5 +17,5 @@ jobs:
       - run : npm install
       - run : npm run build
       - run : sudo rm -r /var/www/business/build
-      - run : sudo mv /home/mbe/actions-runner-two/_work/business-owner/business-owner/build /var/www/business/
+      - run : sudo mv /home/mbe/business/actions-runner-two/_work/business-owner/business-owner/build /var/www/business/
       - run : sudo cp /var/www/.htaccess /var/www/business/build
