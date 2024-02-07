@@ -211,7 +211,7 @@ function ImplementationPartners() {
                                     </div>
                                     <div className="text-block-middle-links">
                                         <div className="person-about">
-                                            <h5>Grant Lintnaar</h5>
+                                            <h5>Anand Bunsee</h5>
                                             <p><NavLink to="mailto:info@procursus.co.za">info@procursus.co.za</NavLink></p>
                                             <p><NavLink to="tel:+27829798507">+27 82 979 8507</NavLink></p>
                                         </div>
