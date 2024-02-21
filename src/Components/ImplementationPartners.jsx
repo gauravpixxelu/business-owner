@@ -7,12 +7,14 @@ import Web_Logo3 from '../assets/images/logo-3.png';
 import Web_Logo4 from '../assets/images/logo-4.png';
 import Web_Logo5 from '../assets/images/logo-5.png';
 import Web_Logo6 from '../assets/images/logo-6.png';
+import Web_Logo7 from '../assets/images/logo-7.png';
 import Person2 from '../assets/images/person-2.jpg';
 import Person1 from '../assets/images/person-1.jpg';
 import Person3 from '../assets/images/person-3.jpg';
 import Person4 from '../assets/images/person-4.jpg';
 import Person5 from '../assets/images/person-5.jpg';
 import Person6 from '../assets/images/person-6.png';
+import Person7 from '../assets/images/person-7.jpg';
 import { NavLink } from "react-router-dom";
 
 function ImplementationPartners() {
@@ -225,9 +227,41 @@ function ImplementationPartners() {
                                     <p className="hdng-18">Cape Town</p>
                                 </div>
                             </div>
+                            </div>
+                            
+
+                            <div className="col-md-4" data-aos="fade-up">
+                                <div className="text-block-impli">
+                                    <div className="text-block-top">
+                                        <h5 className="hdng-h5"> Zenith Transformation Consulting and Coaching</h5>
+                                    </div>
+                                    <div className="text-block-middle">
+                                        <div className="text-block-middle-image">
+                                            <img src={Person7} alt="Person7" />
+                                            <div className="logo-op">
+                                                <img src={Web_Logo7} alt="Web_Logo7" />
+                                            </div>
+                                        </div>
+                                        <div className="text-block-middle-links">
+                                            <div className="person-about">
+                                                <h5>Michael Robertson</h5>
+                                                <p><NavLink to="mailto:michael@zenithtcc.com">michael@zenithtcc.com</NavLink></p>
+                                                <p><NavLink to="tel:+610466710776">+61 0466710776</NavLink></p>
+                                            </div>
+                                            <ul>
+                                                <li><NavLink to="https://www.linkedin.com/in/michael-robertson-gaicd" target="_blank" rel="noreferrer"><img src={Linkedin} alt="Linkedin" /></NavLink></li>
+                                                <li><NavLink to="https://www.zenithtcc.com" target="_blank" rel="noreferrer">www.zenithtcc.com</NavLink></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="text-block-bottom">
+                                        <p className="hdng-18">Melbourne, Australia</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
-                </div>
             </section>
 
 
